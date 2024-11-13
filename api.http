@@ -1,0 +1,25 @@
+### Health Check
+GET http://localhost:8080/api/health-check
+
+### List
+GET http://localhost:8080/api/todos
+
+### Create
+POST http://localhost:8080/api/todos
+content-type: application/json
+
+{
+    "text": "Edem"
+}
+
+### Update
+PATCH http://localhost:8080/api/todos/0cf4bc01-3244-41f8-8023-98992c205175
+content-type: application/json
+
+{
+    "text": "here some reminder, mention @raditzlawliet share and like",
+    "completed": false
+}
+
+### Delete
+DELETE http://localhost:8080/api/todos/6857d57a-8b2c-4a12-9a2e-d8ea382cb7e5
